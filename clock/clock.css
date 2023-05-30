@@ -1,0 +1,215 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins'sans-serif;
+    font-family: 'Poppins'cursive;
+    background: #131418;
+}
+
+.container{
+    height:330px;
+    width:330px;
+    background:#4A4A4A;
+    border-radius: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    overflow:hidden;
+}
+.container::before{
+    content:"";
+    height:320px;
+    width:320px;
+    background:#252525;
+    border-radius: 100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    overflow:hidden;
+}
+
+.container::after{
+    content:"";
+    height:335px;
+    width:50%;
+    background:rgba(69,69,69,.2);
+    position:absolute;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 1;
+}
+.container .container2{
+    height:250px;
+    width:250px;
+    background:#141414;
+    box-shadow:insert 5px 5px 10px #080808
+    insert -5px -5px 10px #202020;
+    border-radius:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.container .container2 .indicator > div{
+    height:10px;
+    width:1px;
+    background:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50Z);
+}
+.indicator div:nth-child(1){
+    transform:rotate(30deg)
+    translateY(-152px);
+}
+.indicator div:nth-child(2){
+    transform:rotate(60deg)
+    translateY(-150px);
+}
+.indicator div:nth-child(3){
+    transform:rotate(90deg)
+    translateY(-144px);
+    background: white;
+}
+.indicator div:nth-child(4){
+    transform:rotate(120deg)
+    translateY(-142px);
+}
+.indicator div:nth-child(5){
+    transform:rotate(150deg)
+    translateY(-142px);
+}
+.indicator div:nth-child(6){
+    transform:rotate(180deg)
+    rotateZ(180deg) translateY(140px);
+    background: white;
+}
+.indicator div:nth-child(7){
+    transform:rotate(210deg)
+    translateY(-142px);
+}
+.indicator div:nth-child(8){
+    transform:rotate(240deg)
+    translateY(-145px);
+}
+.indicator div:nth-child(9){
+    transform:rotate(270deg)
+    translateY(-148px);
+    background: white;
+}
+.indicator div:nth-child(10){
+    transform:rotate(300deg)
+    translateY(-152px);
+}
+.indicator div:nth-child(11){
+    transform:rotate(330deg)
+    translateY(-152px);
+}
+.indicator div:nth-child(12){
+    transform:rotate(360deg)
+    translateY(-152px);
+    background: white;
+}
+.container .container2 .centernut{
+    height:15px;
+    width:15px;
+    border-radius: 100%;
+    background: white;
+    border:2px solid grey;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+}
+.container .container2 .sec-hand, .container .container2 .min-hand, .container .container2 .hour-hand{
+    height:1px;
+    width:1px;
+    border-radius: 30px;
+    background:grey;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+}
+.container .container2 .sec-hand::before{
+    content:"";
+    height:65px;
+    width:10px;
+    background: #171717;
+    border-radius: 30px;
+    position:absolute;
+    top:-10px;
+    left:-5px;
+    z-index:2;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset;
+}
+.container .container2 .sec-hand::after{
+    content:"";
+    height:158px;
+    width:3px;
+    background: #FFC902;
+    position:absolute;
+    top:-155px;
+    left:-1.2px; 
+}
+.container .container2 .min-hand::before{
+    content:"";
+    height:125px;
+    width:5px;
+    background: #171717;
+    position:absolute;
+    top:-120px;
+    left:-2.2px;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset;
+}
+
+.container .container2 .min-hand::after,.container .container2 .hour-hand::after{
+    content:"";
+    height:60px;
+    width:5px;
+    background:white;
+    position:absolute;
+    top:-120px;
+    left:-1.5px; 
+}
+.container .container2 .min-hand::after{
+    left:-2.2px
+}
+.container .container2 .hour-hand::before{
+    content:"";
+    height:90px;
+    width:8px;
+    background: #171717;
+    position:absolute;
+    top:-85px;
+    left:-3.5px;
+    box-shadow: rgba(0,0,0,0.2) 0px 12px 28px 0px, rgba(0,0,0,0.1) 0px 2px 4px 0px, rgba(255,255,255,0.05) 0px 0px 0px 1px inset;
+}
+.container .container2 .hour-hand::after{
+    width:8px;
+    top:-85px;
+}
+
+.container .container2 .clock-name{
+    position: absolute;
+    top:45px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #F5F5F5;
+    font-size:11px;
+}
